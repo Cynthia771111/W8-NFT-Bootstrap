@@ -1,0 +1,343 @@
+---
+title: Boostrap Index
+layout: ./app/layout.ejs
+engine: ejs
+current: article-filter
+---
+<div class="container-lg">
+    <div class="row">
+        <div class="col-lg-3 custom-d-none custom-d-lg-block">
+            <div class="filter-modal border bg-white">
+                <div class="form px-24 pt-24 border-bottom">
+                    <div class="filter-title d-flex justify-content-between">
+                        <p class="mb-0 fw-bold">網路</p>
+                        <p><a data-bs-toggle="collapse" href="#collapse-internet" role="button" aria-expanded="true" aria-controls="collapseExample">
+                            <i class="fa-solid fa-angle-up"></i></a></p>
+                    </div>
+                    <div class="collapse pb-24" id="collapse-internet">
+                        <form action="index.aspx" metion="post" target="_blank" autocomplete="on" class="card card-body border-0 p-0">
+                            <div class="option d-flex justify-content-between mb-8">
+                                <label for="internet">以太坊</label>
+                                <input class="" type="checkbox" id="internet">
+                            </div> 
+                            <div class="option d-flex justify-content-between">
+                                <label for="internet">BNB 智能鏈</label>
+                                <input class="" type="checkbox" id="internet" checked>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="form px-24 pt-24 border-bottom">
+                    <div class="filter-title d-flex justify-content-between">
+                        <p class="mb-0 fw-bold">狀態</p>
+                        <p><a data-bs-toggle="collapse" href="#collapse-status" role="button" aria-expanded="true" aria-controls="collapseExample">
+                            <i class="fa-solid fa-angle-up"></i></a></p>
+                    </div>
+                    <div class="collapse pb-24" id="collapse-status">
+                        <form action="index.aspx" metion="post" target="_blank" autocomplete="on" class="card card-body border-0 p-0">
+                            <div class="option d-flex justify-content-between mb-8">
+                                <label for="display-only">僅展示</label>
+                                <input class="" type="checkbox" id="display-only">
+                            </div> 
+                            <div class="option d-flex justify-content-between">
+                                <label for="auction">拍賣中</label>
+                                <input class="" type="checkbox" id="auction" checked>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="form px-24 pt-24 border-bottom">
+                    <div class="filter-title d-flex justify-content-between">
+                        <p class="mb-0 fw-bold">價格</p>
+                        <p><a data-bs-toggle="collapse" href="#collapse-price" role="button" aria-expanded="true" aria-controls="collapseExample">
+                            <i class="fa-solid fa-angle-up"></i></a></p>
+                    </div>
+                    <div class="collapse pb-24" id="collapse-price">
+                        <form action="index.aspx" metion="post" target="_blank" autocomplete="on" class="card card-body flex-row align-items-center border-0 p-0">
+                            <label for="currency-type">
+                                <select name="currency-type" id="currency-type" class="me-8 py-4">
+                                    <option value="ETH">ETH</option>
+                                    <option value="TWD">TWD</option>
+                                    <option value="JPY">JPY</option>
+                                </select>
+                            </label>
+                            <label for="min-price">
+                                <input type="number" id="min-price" class="w-100">
+                            </label>
+                            <p class="mb-0">-</p>
+                            <label for="max-price">
+                                <input type="number" id="max-price" class="w-100">
+                            </label>
+
+
+                            
+                        </form>
+                    </div>
+                </div>
+                <div class="form px-24 pt-24">
+                    <p class="fs-light fw-bold mb-24">屬性</p>
+                    <div class="filter-title d-flex justify-content-between">
+                        <p class="mb-0 fw-bold">品種</p>
+                        <p><a data-bs-toggle="collapse" href="#collapse-variety" role="button" aria-expanded="true" aria-controls="collapseExample">
+                            <i class="fa-solid fa-angle-up"></i></a></p>
+                    </div>
+                    <div class="collapse mb-24" id="collapse-variety">
+                        <form action="index.aspx" metion="post" target="_blank" autocomplete="on" class="card card-body border-0 p-0">
+                            <div class="option d-flex justify-content-between mb-8">
+                                <label for="bird1">八哥</label>
+                                <input class="" type="checkbox" id="bird1">
+                            </div> 
+                            <div class="option d-flex justify-content-between mb-8">
+                                <label for="bird2">虎皮鸚鵡</label>
+                                <input class="" type="checkbox" id="bird2" checked>
+                            </div>
+                            <div class="option d-flex justify-content-between mb-8">
+                                <label for="bird3">太平鳥</label>
+                                <input class="" type="checkbox" id="bird3">
+                            </div>
+                            <div class="option d-flex justify-content-between">
+                                <label for="bird4">畫眉鳥</label>
+                                <input class="" type="checkbox" id="bird4">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="filter-title d-flex justify-content-between">
+                        <p class="mb-0 fw-bold">鳥的數量</p>
+                        <p><a data-bs-toggle="collapse" href="#collapse-number" role="button" aria-expanded="true" aria-controls="collapseExample">
+                            <i class="fa-solid fa-angle-down"></i></a></p>
+                    </div>
+                    <div class="collapse mb-24" id="collapse-number">
+                        <form action="index.aspx" metion="post" target="_blank" autocomplete="on" class="card card-body border-0 p-0">
+                            <div class="option d-flex justify-content-between mb-8">
+                                <label for="less">1~10</label>
+                                <input class="" type="checkbox" id="less">
+                            </div> 
+                            <div class="option d-flex justify-content-between mb-8">
+                                <label for="many">10隻以上</label>
+                                <input class="" type="checkbox" id="many" checked>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="filter-title d-flex justify-content-between">
+                        <p class="mb-0 fw-bold">是否有花草</p>
+                        <p><a data-bs-toggle="collapse" href="#collapse-plent" role="button" aria-expanded="true" aria-controls="collapseExample">
+                            <i class="fa-solid fa-angle-down"></i></a></p>
+                    </div>
+                    <div class="collapse mb-24" id="collapse-plent">
+                        <form action="index.aspx" metion="post" target="_blank" autocomplete="on" class="card card-body border-0 p-0">
+                            <div class="option d-flex justify-content-between mb-8">
+                                <label for="yes">有</label>
+                                <input class="" type="checkbox" id="yes">
+                            </div> 
+                            <div class="option d-flex justify-content-between mb-8">
+                                <label for="no">沒有</label>
+                                <input class="" type="checkbox" id="no" checked>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="filter-title d-flex justify-content-between">
+                        <p class="mb-0 fw-bold">鳥的顏色</p>
+                        <p><a data-bs-toggle="collapse" href="#collapse-color" role="button" aria-expanded="true" aria-controls="collapseExample">
+                            <i class="fa-solid fa-angle-down"></i></a></p>
+                    </div>
+                    <div class="collapse mb-24" id="collapse-color">
+                        <form action="index.aspx" metion="post" target="_blank" autocomplete="on" class="card card-body border-0 p-0">
+                            <div class="option d-flex justify-content-between mb-8">
+                                <label for="blue">藍</label>
+                                <input class="" type="checkbox" id="blue">
+                            </div> 
+                            <div class="option d-flex justify-content-between mb-8">
+                                <label for="red">紅</label>
+                                <input class="" type="checkbox" id="red" checked>
+                            </div>
+                            <div class="option d-flex justify-content-between mb-8">
+                                <label for="black">黑</label>
+                                <input class="" type="checkbox" id="black">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-9 mb-24 mb-lg-40">
+            <div class="content mb-24 mb-lg-48">
+                <div class="intro-and-counts d-lg-flex align-items-end mb-40">
+                    <div class="intro me-24">
+                        <div class="d-flex align-items-center mb-4">
+                            <img class="w-32px h-32px custom-rounded-100 me-16" src="./assets/images/artist01.jpg" alt="artist">
+                            <p class="mb-0">Machael</p>
+                        </div>
+                        <h1 class="fs-32 fw-bold">我家外面的鳥</h1>
+                        <p class="mb-lg-0">家門前每天都有不同的小鳥，大多數的小鳥都有特殊能力，特殊能力是什麼我就不說了，希望大家能從作品感受到小鳥的快樂。</p>
+                    </div>
+                    <div class="counts border bg-white d-flex justify-content-center">
+                        <div class="count custom-w-25 w-lg-104px px-lg-8 py-16 border-end">
+                            <p class="text-center text-nowrap mb-8">項目</p>
+                            <p class="text-center fs-24 text-nowrap mb-0">6.4 k</p>
+                        </div>
+                        <div class="count custom-w-25 w-lg-104px px-8 py-16 border-end">
+                            <p class="text-center text-nowrap mb-8">擁有者</p>
+                            <p class="text-center fs-24 text-nowrap mb-0">2.5 k</p>
+                        </div>
+                        <div class="count custom-w-25 w-lg-104px px-8 py-16 border-end">
+                            <p class="text-center text-nowrap mb-8">底價</p>
+                            <div class="d-flex align-items-center justify-content-center">
+                                <i class="fa-brands fa-ethereum me-4"></i>
+                                <p class="text-center fs-24 text-nowrap mb-0">1.38 k</p>
+                            </div>
+                        </div>
+                        <div class="custom-w-25 w-lg-104px px-8 py-16">
+                            <p class="text-center text-nowrap mb-8">總額</p>
+                            <p class="text-center fs-24 text-nowrap mb-0">2.8 k</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="d-flex justify-content-end">
+                    <label for="currency-type">
+                        <select name="currency-type" id="currency-type" class="me-8 py-4 w-156px w-lg-128px">
+                            <option value="new">最新上架</option>
+                            <option value="lower-price">價格高至低</option>
+                            <option value="higher-ptice">價格低至高</option>
+                        </select>
+                    </label>
+                </div> 
+            </div>
+            <div class="row" data-masonry='{"percentPosition": true }'>
+                <div class="col-6 col-xxl-4 artwork-hover">
+                  <div class="arkwork-img-frame p-8 p-lg-24 bg-white mb-16">
+                    <div class="image">
+                      <img src="assets/images/art20.jpg" alt="" class="w-100">
+                      <div class="note">
+                        <p class="text text-white">3/14情人節外面剛好有兩隻鳥，也在過情人節。</p>
+                        <div class="price d-flex align-items-center">
+                          <i class="fa-brands fa-ethereum me-8 text-white"></i>
+                          <p class="m-0 text-white">300</p>
+                        </div>
+                      </div>
+                      <a href="#" class="btn btn-md btn-decoration btn-bg-white btn-hover btn-decoration-hover">MORE</a>
+                    </div>
+                  </div>
+                  <p class="fw-bold pb-8 pb-lg-16 border-lg-bottom">這裡要放作品的名稱</p>
+                </div>
+                <div class="col-6 col-xxl-4 artwork-hover">
+                  <div class="arkwork-img-frame p-8 p-lg-24 bg-white mb-16">
+                    <div class="image">
+                      <img src="assets/images/art22.jpg" alt="" class="w-100">
+                      <div class="note">
+                        <p class="text text-white">3/14情人節外面剛好有兩隻鳥，也在過情人節。</p>
+                        <div class="price d-flex align-items-center">
+                          <i class="fa-brands fa-ethereum me-8 text-white"></i>
+                          <p class="m-0 text-white">300</p>
+                        </div>
+                      </div>
+                      <a href="#" class="btn btn-md btn-decoration btn-bg-white btn-hover btn-decoration-hover">MORE</a>
+                    </div>
+                  </div>
+                  <p class="fw-bold pb-8 pb-lg-16 border-lg-bottom">這裡要放作品的名稱</p>
+                </div>
+                <div class="col-6 col-xxl-4 artwork-hover">
+                  <div class="arkwork-img-frame p-8 p-lg-24 bg-white mb-16">
+                    <div class="image">
+                      <img src="assets/images/art27.jpg" alt="" class="w-100">
+                      <div class="note">
+                        <p class="text text-white">3/14情人節外面剛好有兩隻鳥，也在過情人節。</p>
+                        <div class="price d-flex align-items-center">
+                          <i class="fa-brands fa-ethereum me-8 text-white"></i>
+                          <p class="m-0 text-white">300</p>
+                        </div>
+                      </div>
+                      <a href="#" class="btn btn-md btn-decoration btn-bg-white btn-hover btn-decoration-hover">MORE</a>
+                    </div>
+                  </div>
+                  <p class="fw-bold pb-8 pb-lg-16 border-lg-bottom">這裡要放作品的名稱</p>
+                </div>
+                <div class="col-6 col-xxl-4 artwork-hover">
+                  <div class="arkwork-img-frame p-8 p-lg-24 bg-white mb-16">
+                    <div class="image">
+                      <img src="assets/images/art25.jpg" alt="" class="w-100">
+                      <div class="note">
+                        <p class="text text-white">3/14情人節外面剛好有兩隻鳥，也在過情人節。</p>
+                        <div class="price d-flex align-items-center">
+                          <i class="fa-brands fa-ethereum me-8 text-white"></i>
+                          <p class="m-0 text-white">300</p>
+                        </div>
+                      </div>
+                      <a href="#" class="btn btn-md btn-decoration btn-bg-white btn-hover btn-decoration-hover">MORE</a>
+                    </div>
+                  </div>
+                  <p class="fw-bold pb-8 pb-lg-16 border-lg-bottom">這裡要放作品的名稱</p>
+                </div>
+                <div class="col-6 col-xxl-4 artwork-hover">
+                  <div class="arkwork-img-frame p-8 p-lg-24 bg-white mb-16">
+                    <div class="image">
+                      <img src="assets/images/art22.jpg" alt="" class="w-100">
+                      <div class="note">
+                        <p class="text text-white">3/14情人節外面剛好有兩隻鳥，也在過情人節。</p>
+                        <div class="price d-flex align-items-center">
+                          <i class="fa-brands fa-ethereum me-8 text-white"></i>
+                          <p class="m-0 text-white">300</p>
+                        </div>
+                      </div>
+                      <a href="#" class="btn btn-md btn-decoration btn-bg-white btn-hover btn-decoration-hover">MORE</a>
+                    </div>
+                  </div>
+                  <p class="fw-bold pb-8 pb-lg-16 border-lg-bottom">這裡要放作品的名稱</p>
+                </div>
+                <div class="col-6 col-xxl-4 artwork-hover">
+                  <div class="arkwork-img-frame p-8 p-lg-24 bg-white mb-16">
+                    <div class="image">
+                      <img src="assets/images/art21.jpg" alt="" class="w-100">
+                      <div class="note">
+                        <p class="text text-white">3/14情人節外面剛好有兩隻鳥，也在過情人節。</p>
+                        <div class="price d-flex align-items-center">
+                          <i class="fa-brands fa-ethereum me-8 text-white"></i>
+                          <p class="m-0 text-white">300</p>
+                        </div>
+                      </div>
+                      <a href="Michael-together.html" class="btn btn-md btn-decoration btn-bg-white btn-hover btn-decoration-hover">MORE</a>
+                    </div>
+                  </div>
+                  <p class="fw-bold pb-8 pb-lg-16 border-lg-bottom">這裡要放作品的名稱</p>
+                </div>
+                <div class="col-6 col-xxl-4 artwork-hover">
+                    <div class="arkwork-img-frame p-8 p-lg-24 bg-white mb-16">
+                      <div class="image">
+                        <img src="assets/images/art23.jpg" alt="" class="w-100">
+                        <div class="note">
+                          <p class="text text-white">3/14情人節外面剛好有兩隻鳥，也在過情人節。</p>
+                          <div class="price d-flex align-items-center">
+                            <i class="fa-brands fa-ethereum me-8 text-white"></i>
+                            <p class="m-0 text-white">300</p>
+                          </div>
+                        </div>
+                        <a href="#" class="btn btn-md btn-decoration btn-bg-white btn-hover btn-decoration-hover">MORE</a>
+                      </div>
+                    </div>
+                    <p class="fw-bold pb-8 pb-lg-16 border-lg-bottom">這裡要放作品的名稱</p>
+                </div>
+                <div class="col-6 col-xxl-4 artwork-hover">
+                <div class="arkwork-img-frame p-8 p-lg-24 bg-white mb-16">
+                    <div class="image">
+                    <img src="assets/images/art22.jpg" alt="" class="w-100">
+                    <div class="note">
+                        <p class="text text-white">3/14情人節外面剛好有兩隻鳥，也在過情人節。</p>
+                        <div class="price d-flex align-items-center">
+                        <i class="fa-brands fa-ethereum me-8 text-white"></i>
+                        <p class="m-0 text-white">300</p>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-md btn-decoration btn-bg-white btn-hover btn-decoration-hover">MORE</a>
+                    </div>
+                </div>
+                <p class="fw-bold pb-8 pb-lg-16 border-lg-bottom">這裡要放作品的名稱</p>
+                </div>
+              </div>
+        </div>
+
+        <!-- Button trigger modal -->
+        <button type="button" class="col-4 offset-4 fixed-bottom custom-d-lg-none btn fs-16 bg-black text-white text-nowrap px-48 py-8 mb-16" data-bs-toggle="modal" data-bs-target="#modal-filter">
+            篩選條件 2
+        </button>
+    </div>
+</div>

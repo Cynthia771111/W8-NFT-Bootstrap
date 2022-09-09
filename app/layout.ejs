@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title><%- title %></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="./assets/style/all.css">
+  </head>
+  <body>
+    <div class="header">
+      <div class="border-lg-bottom">
+        <div class="container-lg d-flex justify-content-between">
+          <a class="d-block d-flex align-items-center me-24" href="index.html"><img src="./assets/images/logo.svg" class="logo" alt="logo"></a>
+          <nav class="d-flex">
+            <div class="search ps-48 pe-48 border-lg-start d-flex align-items-center justify-content-lg-between">
+              <label for="search"></label>
+              <input id="search" type="text" class="placeholder link-bg-primary border-0 w-100" placeholder="搜尋作品名稱、藝術家名稱">
+              <a href="test.html"><i class="fa-solid fa-magnifying-glass pt-16 pb-16 me-24 me-lg-0"></i></a>
+              <a href="#"><i class="d-block d-lg-none fa-solid fa-bars"></i></a>
+            </div>
+            <a href="search.html" class="d-none d-lg-block border-lg-start link-hover ps-48 pe-24 pt-lg-40 pb-lg-40 pe-lg-48">
+              <p class="m-0 text-nowrap">探索</p>
+            </a>
+            <a href="market-price-list.html" class="d-none d-lg-block border-lg-start link-hover pt-40 pb-40 ps-48 pe-48">
+              <p class="m-0 text-nowrap">市值</p>
+            </a>
+            <button type="button" href="#" class="d-none d-lg-block custom-border-0 border-lg-start border-lg-end link-hover pt-40 pb-40 ps-48 pe-48" data-bs-toggle="modal" data-bs-target="#modal-add-money">
+              <i class="fa-solid fa-wallet"></i>
+            </button>
+
+            <!-- <a href="#" class="d-none d-lg-block border-lg-start link-hover pt-40 pb-40 ps-48 pe-48">
+              <i class="fa-solid fa-wallet"></i>
+            </a> -->
+          </nav>
+        </div>
+      </div>
+    </div>
+
+
+            <!-- Button trigger modal -->
+            <button type="button" class="col-4 offset-4 fixed-bottom custom-d-lg-none btn fs-16 bg-black text-white text-nowrap px-48 py-8 mb-16" data-bs-toggle="modal" data-bs-target="#modal-filter">
+              篩選條件 2
+          </button>
+
+
+
+
+
+           
+    <%- contents %>
+
+      <!-- modal-add-money -->
+      <div class="modal fade" id="modal-add-money" tabindex="-1" aria-labelledby="modal-add-money" aria-hidden="true">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header justify-content-center">
+                      <h5 class="modal-title" id="exampleModalLabel">連結你的錢包</h5>
+                  </div>
+                  <div class="modal-body border-0 mt-8">
+                    <div class="d-flex justify-content-between mb-8">
+                      <a href="#" class="pay-way d-flex justify-content-between align-items-center custom-border border-2 p-16 w-100 me-8">
+                        <div class="d-flex align-items-center">
+                            <img class="me-16 w-16px h-16px" src="./assets/images/logo/connect01.png" alt="logo">
+                            <p class="mb-0">MetaMask</p>
+                        </div>
+                        <i class="fa-solid fa-check text-secondary"></i>
+                      </a>
+                      <a href="#" class="pay-way d-flex justify-content-between align-items-center custom-border border-2 p-16 w-100">
+                        <div class="d-flex align-items-center">
+                            <img class="me-16 w-16px h-16px" src="./assets/images/logo/connect02.png" alt="logo">
+                            <p class="mb-0">Coinbase Wallet</p>
+                        </div>
+                        <i class="fa-solid fa-check text-secondary"></i>
+                      </a>
+                    </div>
+                    <div class="d-flex justify-content-between mb-8">
+                        <a href="#" class="pay-way d-flex justify-content-between align-items-center custom-border border-2 p-16 w-100 me-8">
+                          <div class="d-flex align-items-center">
+                              <img class="me-16 w-16px h-16px" src="./assets/images/logo/connect03.png" alt="logo">
+                              <p class="mb-0">WalletConnect</p>
+                          </div>
+                          <i class="fa-solid fa-check text-secondary"></i>
+                        </a>
+                        <a href="#" class="pay-way d-flex justify-content-between align-items-center custom-border border-2 p-16 w-100">
+                          <div class="d-flex align-items-center">
+                              <img class="me-16 w-16px h-16px" src="./assets/images/logo/connect04.png" alt="logo">
+                              <p class="mb-0">Phantom</p>
+                          </div>
+                          <i class="fa-solid fa-check text-secondary"></i>
+                        </a>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <a href="#" class="pay-way d-flex justify-content-between align-items-center custom-border border-2 p-16 w-100 me-8">
+                          <div class="d-flex align-items-center">
+                              <img class="me-16 w-16px h-16px" src="./assets/images/logo/connect05.png" alt="logo">
+                              <p class="mb-0">Glow</p>
+                          </div>
+                          <i class="fa-solid fa-check text-secondary"></i>
+                        </a>
+                        <a href="#" class="pay-way d-flex justify-content-between align-items-center custom-border border-2 p-16 w-100">
+                          <div class="d-flex align-items-center">
+                              <img class="me-16 w-16px h-16px" src="./assets/images/logo/connect06.png" alt="logo">
+                              <p class="mb-0">Fortmatic</p>
+                          </div>
+                          <i class="fa-solid fa-check text-secondary"></i>
+                        </a>
+                    </div>
+                  </div>
+                  <div class="modal-footer justify-content-center border-0">
+                    <button type="button" class="btn btn-lg btn-secondary text-white border-0" data-bs-dismiss="modal">連結錢包</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <!-- modal-filter -->
+      <div class="modal fade" id="modal-filter" tabindex="-1" aria-labelledby="modal-filter" aria-hidden="true">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header position-relative justify-content-center">
+                      <h5 class="modal-title" id="exampleModalLabel">篩選條件</h5>
+                      <button type="button" class="btn-close position-absolute top-24px end-24px" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                      <div class="form pt-24 border-bottom">
+                          <div class="filter-title d-flex justify-content-between">
+                              <p class="mb-0 fw-bold">網路</p>
+                              <p><a data-bs-toggle="collapse" href="#collapse-internet" role="button" aria-expanded="true" aria-controls="collapseExample">
+                                  <i class="fa-solid fa-angle-up"></i></a></p>
+                          </div>
+                          <div class="collapse pb-24" id="collapse-internet">
+                              <form action="index.aspx" metion="post" target="_blank" autocomplete="on" class="card card-body border-0 p-0">
+                                  <div class="option d-flex justify-content-between mb-8">
+                                      <label for="internet">以太坊</label>
+                                      <input class="" type="checkbox" id="internet">
+                                  </div> 
+                                  <div class="option d-flex justify-content-between">
+                                      <label for="internet">BNB 智能鏈</label>
+                                      <input class="" type="checkbox" id="internet" checked>
+                                  </div>
+                              </form>
+                          </div>
+                      </div>
+                      <div class="form pt-24 border-bottom">
+                          <div class="filter-title d-flex justify-content-between">
+                              <p class="mb-0 fw-bold">狀態</p>
+                              <p><a data-bs-toggle="collapse" href="#collapse-status" role="button" aria-expanded="true" aria-controls="collapseExample">
+                                  <i class="fa-solid fa-angle-up"></i></a></p>
+                          </div>
+                          <div class="collapse pb-24" id="collapse-status">
+                              <form action="index.aspx" metion="post" target="_blank" autocomplete="on" class="card card-body border-0 p-0">
+                                  <div class="option d-flex justify-content-between mb-8">
+                                      <label for="display-only">僅展示</label>
+                                      <input class="" type="checkbox" id="display-only">
+                                  </div> 
+                                  <div class="option d-flex justify-content-between">
+                                      <label for="auction">拍賣中</label>
+                                      <input class="" type="checkbox" id="auction" checked>
+                                  </div>
+                              </form>
+                          </div>
+                      </div>
+                      <div class="form pt-24 border-bottom">
+                          <div class="filter-title d-flex justify-content-between">
+                              <p class="mb-0 fw-bold">價格</p>
+                              <p><a data-bs-toggle="collapse" href="#collapse-price" role="button" aria-expanded="true" aria-controls="collapseExample">
+                                  <i class="fa-solid fa-angle-up"></i></a></p>
+                          </div>
+                          <div class="collapse pb-24" id="collapse-price">
+                              <form action="index.aspx" metion="post" target="_blank" autocomplete="on" class="card card-body flex-row align-items-center border-0 p-0">
+                                  <label for="currency-type">
+                                      <select name="currency-type" id="currency-type" class="me-8 py-4">
+                                          <option value="ETH">ETH</option>
+                                          <option value="TWD">TWD</option>
+                                          <option value="JPY">JPY</option>
+                                      </select>
+                                  </label>
+                                  <label for="min-price">
+                                      <input type="number" id="min-price" class="w-100">
+                                  </label>
+                                  <p class="mb-0 ps-4 pe-4">-</p>
+                                  <label for="max-price">
+                                      <input type="number" id="max-price" class="w-100">
+                                  </label>   
+                              </form>
+                          </div>
+                      </div>
+                      <div class="form pt-24">
+                          <p class="fs-light fw-bold mb-24">屬性</p>
+                          <div class="filter-title d-flex justify-content-between">
+                              <p class="mb-0 fw-bold">品種</p>
+                              <p><a data-bs-toggle="collapse" href="#collapse-variety" role="button" aria-expanded="true" aria-controls="collapseExample">
+                                  <i class="fa-solid fa-angle-up"></i></a></p>
+                          </div>
+                          <div class="collapse mb-24" id="collapse-variety">
+                              <form action="index.aspx" metion="post" target="_blank" autocomplete="on" class="card card-body border-0 p-0">
+                                  <div class="option d-flex justify-content-between mb-8">
+                                      <label for="bird1">八哥</label>
+                                      <input class="" type="checkbox" id="bird1">
+                                  </div> 
+                                  <div class="option d-flex justify-content-between mb-8">
+                                      <label for="bird2">虎皮鸚鵡</label>
+                                      <input class="" type="checkbox" id="bird2" checked>
+                                  </div>
+                                  <div class="option d-flex justify-content-between mb-8">
+                                      <label for="bird3">太平鳥</label>
+                                      <input class="" type="checkbox" id="bird3">
+                                  </div>
+                                  <div class="option d-flex justify-content-between">
+                                      <label for="bird4">畫眉鳥</label>
+                                      <input class="" type="checkbox" id="bird4">
+                                  </div>
+                              </form>
+                          </div>
+                          <div class="filter-title d-flex justify-content-between">
+                              <p class="mb-0 fw-bold">鳥的數量</p>
+                              <p><a data-bs-toggle="collapse" href="#collapse-number" role="button" aria-expanded="true" aria-controls="collapseExample">
+                                  <i class="fa-solid fa-angle-down"></i></a></p>
+                          </div>
+                          <div class="collapse mb-24" id="collapse-number">
+                              <form action="index.aspx" metion="post" target="_blank" autocomplete="on" class="card card-body border-0 p-0">
+                                  <div class="option d-flex justify-content-between mb-8">
+                                      <label for="less">1~10</label>
+                                      <input class="" type="checkbox" id="less">
+                                  </div> 
+                                  <div class="option d-flex justify-content-between mb-8">
+                                      <label for="many">10隻以上</label>
+                                      <input class="" type="checkbox" id="many" checked>
+                                  </div>
+                              </form>
+                          </div>
+                          <div class="filter-title d-flex justify-content-between">
+                              <p class="mb-0 fw-bold">是否有花草</p>
+                              <p><a data-bs-toggle="collapse" href="#collapse-plent" role="button" aria-expanded="true" aria-controls="collapseExample">
+                                  <i class="fa-solid fa-angle-down"></i></a></p>
+                          </div>
+                          <div class="collapse mb-24" id="collapse-plent">
+                              <form action="index.aspx" metion="post" target="_blank" autocomplete="on" class="card card-body border-0 p-0">
+                                  <div class="option d-flex justify-content-between mb-8">
+                                      <label for="yes">有</label>
+                                      <input class="" type="checkbox" id="yes">
+                                  </div> 
+                                  <div class="option d-flex justify-content-between mb-8">
+                                      <label for="no">沒有</label>
+                                      <input class="" type="checkbox" id="no" checked>
+                                  </div>
+                              </form>
+                          </div>
+                          <div class="filter-title d-flex justify-content-between">
+                              <p class="mb-0 fw-bold">鳥的顏色</p>
+                              <p><a data-bs-toggle="collapse" href="#collapse-color" role="button" aria-expanded="true" aria-controls="collapseExample">
+                                  <i class="fa-solid fa-angle-down"></i></a></p>
+                          </div>
+                          <div class="collapse mb-24" id="collapse-color">
+                              <form action="index.aspx" metion="post" target="_blank" autocomplete="on" class="card card-body border-0 p-0">
+                                  <div class="option d-flex justify-content-between mb-8">
+                                      <label for="blue">藍</label>
+                                      <input class="" type="checkbox" id="blue">
+                                  </div> 
+                                  <div class="option d-flex justify-content-between mb-8">
+                                      <label for="red">紅</label>
+                                      <input class="" type="checkbox" id="red" checked>
+                                  </div>
+                                  <div class="option d-flex justify-content-between mb-8">
+                                      <label for="black">黑</label>
+                                      <input class="" type="checkbox" id="black">
+                                  </div>
+                              </form>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="modal-footer p-0 bg-secondary">
+                      <button type="button fixed-bottom m-0" class="btn btn-100 btn-secondary text-white border-0" data-bs-dismiss="modal">確認</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      
+
+
+
+    <footer class="footer">
+      <div class="top-border mt-4">
+        <p class="pt-24 pb-24 text-center">© ART NFT. All Rights Reserved</p>
+      </div>
+     
+      
+    </footer>
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>  -->
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+  </body>
+
+</html>

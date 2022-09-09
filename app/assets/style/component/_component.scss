@@ -1,0 +1,272 @@
+//button
+.btn {
+    padding: 8px 48px 8px 48px;
+    font-size: 18px;
+    text-align: center;
+    border: 1px solid $black;
+    border-radius: 0;
+    p {
+        margin-bottom: 0;
+    }
+}
+.btn-md {
+    width: 132px;
+}
+.btn-lg {
+    width: 168px;
+}
+.btn-100 {
+    width: 100%;
+}
+.btn-bg-secondary {
+    background: $secondary;
+}
+.btn-bg-white {
+    background: $white;
+}
+.btn-font-color {
+    color: $white;
+}
+.btn-decoration{
+    position: relative;
+    &::after {
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 0;
+        border: 8px solid;
+        border-color: transparent $secondary $secondary transparent;
+        bottom: 0px;
+        right: 0px;
+    }
+}
+.btn-hover:hover {
+    background: $secondary;
+    color: $white;
+}
+.btn-decoration-hover:hover::after {
+    border-color: transparent $black $black transparent;
+}
+
+
+//link
+.link-bg-primary {
+    background: $primary;
+}
+.link-hover:hover {
+    color: $secondary;
+}
+
+//width
+.custom-w-25 {
+    width: 25%;
+}
+.w-70 {
+    width: 70%;
+}
+.w-65 {
+    width: 65%;
+}
+.w-lg-67 {
+    @include media-breakpoint-up(lg) {
+        width: 67%;
+    }
+}
+.w-lg-100 {
+    @include media-breakpoint-up(lg) {
+        width: 100%;
+    }
+}
+.w-lg-64px {
+    @include media-breakpoint-up(lg) {
+        width: 64px;
+    }
+}
+.w-16px {
+    width: 16px;
+}
+.w-24px {
+    width: 24px;
+}
+.w-32px {
+    width: 32px;
+}
+.w-46px {
+    width: 46px;
+}
+.w-48px {
+    width: 48px;
+}
+.w-54px {
+    width: 54px;
+}
+.w-lg-104px {
+    @include media-breakpoint-up(lg) {
+        width: 104px;
+    }
+    
+}
+.w-156px {
+    width: 156px;
+}
+.w-lg-128px {
+    @include media-breakpoint-up(lg) {
+        width: 128px;
+    }
+}
+
+//height
+.h-100 {
+    height: 100%;
+}
+.h-16px {
+    height: 16px;
+}
+.h-24px {
+    height: 24px;
+}
+.h-32px {
+    height: 32px;
+}
+.h-48px {
+    height: 48px;
+}
+
+//font-family
+.number-font-family {
+    font-family: "Paytone One";
+}
+.normal-number-font-family {
+    font-family: "Noto Sans TC";
+}
+
+//border-radius
+.custom-rounded-100 {
+    border-radius: 100px;
+}
+
+//position
+.position-lg-relative {
+    @include media-breakpoint-up(lg) {
+        position: relative;
+    }
+}
+.position-lg-absolute {
+    @include media-breakpoint-up(lg) {
+        position: absolute;
+    }
+}
+.top-24px {
+    top: 24px;
+}
+.end-24px {
+    right: 24px;
+}
+
+//display
+.custom-d-none {
+    display: none;
+}
+.custom-d-sm-none {
+    @include media-breakpoint-up(sm) {
+        display: none;
+    }
+}
+.custom-d-md-none {
+    @include media-breakpoint-up(md) {
+        display: none;
+    }
+}
+.custom-d-lg-none {
+    @include media-breakpoint-up(lg) {
+        display: none;
+    }
+}
+.custom-d-sm-block {
+    @include media-breakpoint-up(sm) {
+        display: block;
+    }
+}
+.custom-d-md-block {
+    @include media-breakpoint-up(md) {
+        display: block;
+    }
+}
+.custom-d-lg-block {
+    @include media-breakpoint-up(lg) {
+        display: block;
+    }
+}
+.custom-d-xl-block {
+    @include media-breakpoint-up(xl) {
+        display: block;
+    }
+}
+.custom-d-xxl-block {
+    @include media-breakpoint-up(xxl) {
+        display: block;
+    }
+}
+.custom-table-head-d-md {
+    @include media-breakpoint-up(md) {
+        display: table-header-group;
+    }
+}
+.custom-table-cell-d-md {
+    @include media-breakpoint-up(md) {
+        display: table-cell;
+    }
+}
+
+
+//font-size
+.custom-fs-32 {
+    font-size: 32px;
+}
+.custom-fs-lg-48 {
+    @include media-breakpoint-up(lg) {
+        font-size: 48px;
+    }
+}
+.custom-fs-lg-80 {
+    @include media-breakpoint-up(lg) {
+        font-size: 80px;
+    }
+}
+
+//color
+.text-off,.fs-light {
+    color:#808080;
+}
+
+.bg-gray {
+    background: #f0f0f0;
+}
+
+.border-color-gray {
+    border-color: #f0f0f0;
+}
+
+//text-align
+.custom-text-center {
+    text-align: center;
+}
+.custom-text-end {
+    text-align: right;
+}
+.custom-text-lg-start {
+    @include media-breakpoint-up(lg) {
+        text-align: left;
+    }
+}
+
+//page
+.per-page {
+    width: 8px;
+    height: 8px;
+    background: $black;
+}
+.page-actived {
+    width: 16px;
+    background: $secondary;
+}
